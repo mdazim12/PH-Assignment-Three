@@ -17,30 +17,82 @@
     <!-- Fontawesome Icon -->
     <script src="https://kit.fontawesome.com/74c9bf5232.js" crossorigin="anonymous"></script>
 
-    
-
-
-<script>
-    tailwind.config = {
-        theme: {
-            extend: {
-            fontFamily: {
-                'manrope': ['Manrope', 'sans-serif'],
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                fontFamily: {
+                    'manrope': ['Manrope', 'sans-serif'],
+                },
+                colors: {
+                    primary: '#1C1C1C',  
+                    customBlue: '#0000ff',
+                    gaygrren: '#abef5f', 
+                },
+                },
             },
-            colors: {
-                customRed: '#ff0000',  
-                customBlue: '#0000ff', 
-            },
-            },
-        },
-    }
-  </script>
+        }
+    </script>
 
    
     
 
 </head>
 <body class="font-manrope">
-    <h1 class="text-customRed">Hello</h1>
+    <header class="bg-gradient-to-t from-white to-violet-50">
+        <div class="container mx-auto">
+            <nav>
+                <div class="flex justify-between navbar ">
+                    <div class="navbar-start">
+                     
+                      <a href="#"><img src="assets/Frame7.png" alt=""></a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1">
+                        <li class="text-gray-900 font-semibold "><a>Home</a></li>
+                        <li class="text-gray-500 font-semibold "><a>Service</a></li>
+                        <li class="text-gray-500 font-semibold "><a>Portfoilo</a></li>
+                        <li class="text-gray-500 font-semibold "><a>Blog</a></li>
+                        <li class="text-gray-500 font-semibold "><a>Contact Us</a></li>
+                      </ul>
+                    </div>
+                    <div class="navbar-end hidden md:block lg:block text-right">
+                        <i class="fa-solid fa-magnifying-glass p-2 mx-2 text-gray-700 bg-white rounded-full"></i>
+                        <i class="fa-solid fa-cart-shopping p-2 mx-2 text-gray-700 bg-white rounded-full"></i>
+                      <a class="btn bg-gaygrren rounded-3xl font-bold ">Book Consultant <i class="fa-solid fa-arrow-right p-3 mx-2 text-gray-100 bg-primary rounded-full -rotate-45 "></i></a> 
+                    </div>
+
+                  
+
+                  <div class="dropdown float-right lg:hidden bg-white p-1 rounded-full">
+                    <div tabindex="0" role="button" class="btn btn-ghost hover:bg-white ">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                  
+                    
+                  </div>
+                  
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 </html>
