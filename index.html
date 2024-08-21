@@ -13,12 +13,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
+  
     <!-- Fontawesome Icon -->
     <script src="https://kit.fontawesome.com/74c9bf5232.js" crossorigin="anonymous"></script>
 
+    
+
+
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+            fontFamily: {
+                'manrope': ['Manrope', 'sans-serif'],
+            },
+            colors: {
+                customRed: '#ff0000',  
+                customBlue: '#0000ff', 
+            },
+            },
+        },
+    }
+  </script>
+
+   
+    
+
 </head>
-<body>
-    <h1>Hello</h1>
-    <h2><i class="fa-solid fa-bars"></i></h2>
+<body class="font-manrope">
+    <h1 class="text-customRed">Hello</h1>
 </body>
 </html>
